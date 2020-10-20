@@ -200,6 +200,7 @@ export default {
 		},
 		toggleRoomsList() {
 			this.showRoomsList = !this.showRoomsList
+      this.$emit('roomListShowing',this.showRoomsList)
 			if (this.isMobile) this.room = {}
 		},
 		fetchRoom({ room }) {
